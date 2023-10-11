@@ -1,4 +1,3 @@
-GNUSTEP_MAKEFILES = /Developer/Makefiles
 ifeq ($(GNUSTEP_MAKEFILES),)
  GNUSTEP_MAKEFILES := $(shell gnustep-config --variable=GNUSTEP_MAKEFILES 2>/dev/null)
   ifeq ($(GNUSTEP_MAKEFILES),)
@@ -37,8 +36,6 @@ GSMetNoWeather_OBJC_FILES += \
 GSMetNoWeather_HEADER_FILES += \
 	GSMetNoWeather.h
 
-
-Performance_HEADER_FILES_INSTALL_DIR = Performance
 
 -include GNUmakefile.preamble
 
